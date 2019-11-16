@@ -12,6 +12,6 @@
     }
     stage('promoting to QA') {
        echo 'fake stage...'
-       sleep 5
+       sleep 5 
     }
 }
