@@ -1,6 +1,8 @@
-<?php
-echo "<h1>Openshift Workshop v2.0</h1> ";
-echo $_SERVER['SERVER_ADDR'];
+<?php                    
+  echo "<h1>Openshift Workshop v2.0</h1> ";                    
+  $host= gethostname();
+  $ip = gethostbyname($host);                    
+  echo $ip;
 echo "<br><hr>";
 echo "<h2>Cidades cadastradas no Banco de Dados:</h2>";
 $conn = new mysqli("mysql", "redhat", "redhat@123", "workshop");
